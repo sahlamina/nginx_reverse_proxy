@@ -24,7 +24,7 @@
 - In this file, we the default code that we delete ``sudo rm -r default``. We then create a new default file `` touch default`` and inject it with the preferred configuration.
 - This is done through `` nano default``
 - The following block of code allows for the creation of a proxy server:
-``
+```bash
 server {
     listen 80;
     server_name _;
@@ -37,7 +37,8 @@ server {
         proxy_cache_bypass $http_upgrade;
     }
 }
-``
+```
+
 - We can then run the check if the code is having the desired effect by running ``node app.js``
 in the VM's app directory
  
