@@ -30,3 +30,12 @@ sudo systemctl start nginx
 sudo systemctl stop nginx
 sudo systemctl restart nginx
 sudo systemctl status nginx
+
+
+# App set up
+export DB_HOST="mongodb://192.168.10.150:27017/posts"
+cd /home/ubuntu/app
+sudo su
+npm install
+node app.js
+
