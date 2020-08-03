@@ -48,4 +48,4 @@ in the VM's app directory
  ``sudo unlink /etc/nginx/sites-enabled/default ``
 - ``sudo ln -s /home/ubuntu/environment/default /etc/nginx/sites-enabled/default``
 - I also created a default file in my environment directory and injected the configuration of my reverse proxy into it.
-- The result of this was an automation of the reverse proxy creating process .
+- The result of this was an automation of the reverse proxy creating process.
