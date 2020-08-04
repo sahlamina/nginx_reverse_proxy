@@ -46,6 +46,28 @@ in the VM's app directory
 - The process can be said to be automated when one command allows for all the navigating, default file deletion and reconstruction is not necessary to see the desired web pages.
 - I did this by adding code which navigated to, deleted and updated default file in my provision.sh file:
  ``sudo unlink /etc/nginx/sites-enabled/default ``
-- ``sudo ln -s /home/ubuntu/environment/default /etc/nginx/sites-enabled/default``
-- I also created a default file in my environment directory and injected the configuration of my reverse proxy into it.
+- ``sudo ln -s /home/ubuntu/environment/default /etc/nginx/sites-enabled/default``- I also created a default file in my environment directory and injected the configuration of my reverse proxy into it.
 - The result of this was an automation of the reverse proxy creating process.
+
+### Instructions to run the application 
+ - After downloading this repository
+ - Navigate to the location of the directory you have saved the files to using your`Terminal`
+ - In my case it would be:
+ ```bash
+cd /Users/saheedlamina/Desktop/reverse proxy/Reverse Proxy RG
+ ```
+- Upon running the `ls` (list)  command, you should find the contents of the directory:
+```bash
+README.md					app						tests
+Vagrantfile					environment					ubuntu-xenial-16.04-cloudimg-console.log
+```
+- At this stage you are ready to run the app, simply type the following command:
+```bash
+vagrant up
+```
+- Lastly, navigate to the web browser and input these links:
+```bash
+http://development.local/
+http://development.local/posts
+http://development.local/fibonacci/7
+```
