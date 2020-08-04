@@ -8,7 +8,12 @@
     - A proxy server is like a web server in that it fetches and serves client requests. However, the two are distinct because a proxy server acts as like conduit between the client and the web server.
     - When a proxy server is used, the request leaves the client, reaches the proxy server which then retrieves the request from the web server and returns the result to the client.
     - The benefits of this are the added security benefits, privacy benefits, control of internet usage of employees or children and access to blocked resources.
-    
+---
+### Dependencies required for this exercise
+- Vagrant
+- VirtualBox
+- Ruby
+- Bundler    
 ---
 ## This Read me covers: 
 - Reverse Proxy servers
